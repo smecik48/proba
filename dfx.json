@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "kot_backend": {
+      "candid": "src/kot_backend/kot_backend.did",
+      "package": "kot_backend",
+      "type": "rust"
+    },
+    "kot_frontend": {
+      "dependencies": [
+        "kot_backend"
+      ],
+      "source": [
+        "src/kot_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "kot_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

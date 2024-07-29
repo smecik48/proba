@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/kot_backend"
+]
+resolver = "2"
