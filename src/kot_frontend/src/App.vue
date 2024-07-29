@@ -6,6 +6,7 @@ let greeting = ref('');
 async function handleSubmit(e) {
   e.preventDefault();
   const target = e.target;
+  const zmienna = 2;
   const name = target.querySelector('#name').value;
   await kot_backend.greet(name).then((response) => {
     greeting.value = response;
